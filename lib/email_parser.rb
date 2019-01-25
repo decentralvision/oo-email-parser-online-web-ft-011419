@@ -8,6 +8,6 @@ class EmailParser
     @email_list = emails
   end
   def parse
-    @email_list.split(/(\s|,\s)/).select.with_index{|arr_item, i| i % 2 == 0}
+    @email_list.split(/(\s|,\s)/).select.with_index{|arr_item, i| i % 1 == 0}
   end
 end
