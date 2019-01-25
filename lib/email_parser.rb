@@ -9,5 +9,6 @@ class EmailParser
   end
   def parse
     split_emails = @email_list.split(/(\s|,\s)/).uniq
+    split_emails - [', ', ' ']
   end
 end
